@@ -23,7 +23,6 @@ def create_image_url(filepath):
     filename = os.path.basename(filepath)
     return f'http://localhost:8081/{filename}'
 
-
 def convert_to_ls(image, tesseract_output, per_level='block_num'):
     """
     :param image: PIL image object
@@ -79,10 +78,9 @@ def convert_to_ls(image, tesseract_output, per_level='block_num'):
         }]
     }
 
-
 tasks = []
 # collect the receipt images from the image directory
-for f in Path('image').glob('*.png'):
+for f in Path('../images').glob('*.png'):
     with Image.open(f.absolute()) as image:
         tesseract_output = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
         task = convert_to_ls(image, tesseract_output, per_level='block_num')

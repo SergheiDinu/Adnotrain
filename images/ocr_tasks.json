@@ -1,0 +1,254 @@
+[
+  {
+    "data": {
+      "ocr": "http://localhost:8081/12.jpg"
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "id": "3e44d8d6-4",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 7.134220072551391,
+              "y": 9.790508764429243,
+              "width": 85.61064087061669,
+              "height": 1.1115861479264644,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "3e44d8d6-4",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "Wystawiono: Poznan, dnia: 15.06.2020 Data wykonania ustugi: 08.04.2020"
+              ],
+              "x": 7.134220072551391,
+              "y": 9.790508764429243,
+              "width": 85.61064087061669,
+              "height": 1.1115861479264644,
+              "rotation": 0
+            },
+            "score": 90.06996825000002
+          },
+          {
+            "id": "cf4796d6-4",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 8.04111245465538,
+              "y": 12.612227447627191,
+              "width": 57.85973397823458,
+              "height": 2.992731936725096,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "cf4796d6-4",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "> KSSOFT FAKTURA VAT nr 11/FA/2020  PRZYKEADOWA !!!"
+              ],
+              "x": 8.04111245465538,
+              "y": 12.612227447627191,
+              "width": 57.85973397823458,
+              "height": 2.992731936725096,
+              "rotation": 0
+            },
+            "score": 80.894259
+          },
+          {
+            "id": "1b7f4d23-0",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 7.194679564691657,
+              "y": 18.982471141513468,
+              "width": 56.4087061668682,
+              "height": 9.83326207781103,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "1b7f4d23-0",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "Sprzedawca: Nabywea:   FIRMA Sp. z 0.0. FIRMA 1   Testowa 25 Testowa 65/1  60-498 Poznan 60-666 Poznan  NIP: 111-222-33-44 Regon:1234567 NIP: 999-88-77-66"
+              ],
+              "x": 7.194679564691657,
+              "y": 18.982471141513468,
+              "width": 56.4087061668682,
+              "height": 9.83326207781103,
+              "rotation": 0
+            },
+            "score": 92.33506019047623
+          },
+          {
+            "id": "8f331627-5",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 7.255139056831923,
+              "y": 29.157759726378796,
+              "width": 56.4087061668682,
+              "height": 2.1804189824711413,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "8f331627-5",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "Konto bankowe: ZZZ Bank Polski S.A. 99 1111 2222 Kod nabywcy: 666  1334 5555 7777 6666"
+              ],
+              "x": 7.255139056831923,
+              "y": 29.157759726378796,
+              "width": 56.4087061668682,
+              "height": 2.1804189824711413,
+              "rotation": 0
+            },
+            "score": 94.91566087499999
+          },
+          {
+            "id": "3e8128a7-8",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 7.194679564691657,
+              "y": 34.88670371953826,
+              "width": 85.0665054413543,
+              "height": 4.9593843522873025,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "3e8128a7-8",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "Sposob zaptaty: Przelew Termin ptatnosci: 12.04.2020   Lp Nazwa towaru/ustugi PKWiU llos\u00e9 J.M. |Cena jed. netto] Rabat | VAT | Wartos\u00e9 Netto | Kwota VAT |Wartos\u00e9 Brutto  %   1 _Ustugi programistyczne 1,00 szt. 500,00 --- 23% 500,00 115,00 615,00"
+              ],
+              "x": 7.194679564691657,
+              "y": 34.88670371953826,
+              "width": 85.0665054413543,
+              "height": 4.9593843522873025,
+              "rotation": 0
+            },
+            "score": 82.34615807894737
+          },
+          {
+            "id": "9791304f-5",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 59.492140266021764,
+              "y": 42.240273621205645,
+              "width": 11.970979443772672,
+              "height": 1.1543394613082514,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "9791304f-5",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "Wedtug stawek VAT:"
+              ],
+              "x": 59.492140266021764,
+              "y": 42.240273621205645,
+              "width": 11.970979443772672,
+              "height": 1.1543394613082514,
+              "rotation": 0
+            },
+            "score": 82.13462700000001
+          },
+          {
+            "id": "6db317d4-2",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 7.194679564691657,
+              "y": 44.719965797349296,
+              "width": 85.0665054413543,
+              "height": 23.557075673364686,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "6db317d4-2",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "23% 500,00 115,00 615,00  Razem 500,00 115,00 615,00  Do zaptaty: 553,50 zt  Stownie: piecset piecdziesiat trzy zt piecdziesiat gr  Zaptacono: 0,00 zt  Pozostato: 615,00 zt  Imie i nazwisko osoby upowaznionej do Imie i nazwisko osoby upowaznionej do  wystawiania faktury: otrzymania faktury:"
+              ],
+              "x": 7.194679564691657,
+              "y": 44.719965797349296,
+              "width": 85.0665054413543,
+              "height": 23.557075673364686,
+              "rotation": 0
+            },
+            "score": 91.92752419512198
+          },
+          {
+            "id": "83a90995-c",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "value": {
+              "x": 40.87061668681983,
+              "y": 90.85079093629756,
+              "width": 18.258766626360337,
+              "height": 1.8383924754168448,
+              "rotation": 0
+            }
+          },
+          {
+            "id": "83a90995-c",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "value": {
+              "text": [
+                "Strona nr 1z 1  OEM: KSSOFT - Fakturowanie"
+              ],
+              "x": 40.87061668681983,
+              "y": 90.85079093629756,
+              "width": 18.258766626360337,
+              "height": 1.8383924754168448,
+              "rotation": 0
+            },
+            "score": 89.234044125
+          }
+        ],
+        "score": 87.98216271431819
+      }
+    ]
+  }
+]
