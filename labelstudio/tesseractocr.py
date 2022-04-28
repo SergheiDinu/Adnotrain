@@ -5,6 +5,8 @@ from PIL import Image
 from pathlib import Path
 from uuid import uuid4
 
+from functions import pdf_to_img
+
 # tesseract output levels for the level of detail for the bounding boxes
 LEVELS = {
     'page_num': 1,
@@ -21,7 +23,7 @@ def create_image_url(filepath):
     Otherwise you can build links like /data/upload/filename.png to refer to the files
     """
     filename = os.path.basename(filepath)
-    return f'http://localhost:8081/{filename}'
+    return f'http://localhost:8082/{filename}'
 
 def convert_to_ls(image, tesseract_output, per_level='block_num'):
     """
@@ -52,7 +54,7 @@ def convert_to_ls(image, tesseract_output, per_level='block_num'):
                 confidence = tesseract_output['conf'][j]
                 words.append(word)
                 if confidence != '-1':
-                    confidences.append(float(confidence / 100.))
+                    confidences.append(float(confidence))
 
             text = ' '.join(words).strip()
             if not text:
@@ -77,15 +79,23 @@ def convert_to_ls(image, tesseract_output, per_level='block_num'):
             'score': sum(all_scores) / len(all_scores) if all_scores else 0
         }]
     }
+def colectandread(map):
+    tasks = []
+    # collect the receipt images from the image directory
 
-tasks = []
-# collect the receipt images from the image directory
-for f in Path('../images').glob('*.png'):
-    with Image.open(f.absolute()) as image:
-        tesseract_output = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
-        task = convert_to_ls(image, tesseract_output, per_level='block_num')
-        tasks.append(task)
+    for f in Path('../'+map).glob('*.jpg'):
+        with Image.open(f.absolute()) as image:
+            tesseract_output = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
+            task = convert_to_ls(image, tesseract_output, per_level='block_num')
+            tasks.append(task)
 
-# create a file to import into Label Studio
-with open('ocr_tasks.json', mode='w') as f:
-    json.dump(tasks, f, indent=2)
+    # create a file to import into Label Studio
+    with open('../'+map+'/'+'ocr_tasks.json', mode='w') as f:
+        json.dump(tasks, f, indent=2)
+
+
+if __name__ == '__main__':
+    pdf_to_img('pdffiles','images')
+    colectandread('images')
+#bash serve_local_files.sh ../images
+#

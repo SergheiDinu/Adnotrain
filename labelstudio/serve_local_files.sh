@@ -2,7 +2,7 @@
 INPUT_DIR=$1
 WILDCARD=${2}
 OUTPUT_FILE=${3:-"files.txt"}
-PORT=${4:-8081}
+PORT=${4:-8082}
 
 echo "Usage: sh serve_local_files.sh INPUT_DIR WILDCARD OUTPUT_FILE PORT"
 echo "This script scans INPUT_DIR directory with WILDCARD filter [all files by default],"

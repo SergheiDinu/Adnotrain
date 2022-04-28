@@ -1,0 +1,2 @@
+pdf2image
+#conda install -c conda-forge poppler

@@ -1,2 +1,0 @@
-http://localhost:8081/12 .jpg
-http://localhost:8081/ocr_tasks.json
