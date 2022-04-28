@@ -1,4 +1,3 @@
-#####################ReadMe info
 ### How to run:
 1. Everythink from req have to be installed using 
         pip install -r requirements.txt
