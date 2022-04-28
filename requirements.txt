@@ -1,3 +1,6 @@
 pdf2image
 label-studio
 #conda install -c conda-forge poppler
+pytesseract
+pathlib
+uuid
