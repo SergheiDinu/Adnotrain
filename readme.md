@@ -8,6 +8,7 @@
                                         conda activate label-studio 
                                         pip install label-studio
                                                                 )
+    
     2.2 run in terminal next to open label studio in browser: label-studio start
 3. run in terminal next to open local map in localhost for being disponible in web(label-studio): bash labelstudio/serve_local_files.sh ../images 
 4. add pdf files into 'pdffiles' map
