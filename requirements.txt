@@ -1,6 +1,6 @@
 pdf2image
-label-studio
 #conda install -c conda-forge poppler
 pytesseract
 pathlib
 uuid
+spacy-streamlit>=1.0.0a0

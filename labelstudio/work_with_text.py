@@ -4,7 +4,7 @@ import pytesseract
 from PIL import Image
 from pathlib import Path
 
-#from functions import pdf_to_img
+from image_functions import pdf_to_img
 
 
 def colectandread(map):
@@ -18,7 +18,7 @@ def colectandread(map):
     # create a file to import into Label Studio
     with open('../'+map+'/'+'ocr_text.json', mode='w') as f:
         json.dump(tasks, f, indent=2)
-        
+
 if __name__ == '__main__':
-    #pdf_to_img('pdffiles','images')
+    pdf_to_img('pdffiles','images')
     colectandread('images')
