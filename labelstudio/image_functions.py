@@ -12,3 +12,4 @@ def pdf_to_img(map,tomap):
 
 if __name__ == '__main__':
     pdf_to_img('pdffiles','images')
+    
