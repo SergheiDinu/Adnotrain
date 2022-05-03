@@ -47,6 +47,28 @@ def convertlabelstudiooutput():
         db.add(doc)
     db.to_disk(output_path)
 
+def convertlabelstudiooutputlukasz():
+    input_path = '../assets/labelstudiooutput.json'
+    output_path = '../assets/train.spacy'
+    nlp = spacy.blank("en")
+    db = DocBin()
+    for page in srsly.read_json(input_path):
+        text = page.get('text')
+        doc = nlp.make_doc(text)
+        ents = []
+        for labels in page.get('label'):
+            span = doc.char_span(labels.get('start'), labels.get('end'), label=labels.get('labels')[0])
+            if span is None:
+                start = labels.get('start')
+                end = labels.get('end')
+                msg = f"Skipping entity [{start}, {end}, {labels.get('labels')[0]}] in the following text because the character span '{doc.text[start:end]}' does not align with token boundaries:\n\n{repr(text)}\n"
+                warnings.warn(msg)
+            else:
+                ents.append(span)
+        doc.ents = ents
+        db.add(doc)
+    db.to_disk(output_path)
+
 if __name__ == "__main__":
     #typer.run(convert)
-    typer.run(convertlabelstudiooutput)
+    typer.run(convertlabelstudiooutputlukasz)
