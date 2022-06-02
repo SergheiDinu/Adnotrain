@@ -1,0 +1,8 @@
+HOST=0.0.0.0
+PORT=5000
+ML_DB_CONNECTION=Postgress://pass:password@127.0.0.1:5432/postgres
+PROJID=hidroelectrica
+LOC=eu
+PROCESSORID=69db52413ef8723
+CAS_URL=http://34.91.200.15:8080/api/v1/ca-segmentate
+GOOGLE_APPLICATION_CREDENTIALS=dacai.json

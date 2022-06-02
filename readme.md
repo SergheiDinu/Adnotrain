@@ -1,4 +1,13 @@
-### How to run:
+### Now we got UPDATE 3/5/2022
+ 1. using lebelstudio/work-with-text.py is method to extract text from images to be involved into NER process inside of label studio 0 Natural Language Processing > Named entity recognition Label setup.
+ 2. inside of label-studio we need to have at least 20 invoices worked for each invoice types, at least at this point we have as example invoices from HIdRO side.  later.. it would depend on our local expert looking examples. From exporting capacities of Lbale-Studio we need to use the one named JSON-MIN, because inside of spacy creation code we defined a specific function for reading that specific data.(spacy/scripts/convert/convertlabelstudiooutput.py), function wich Convert entity annotation from spaCy v2 TRAIN_DATA format to spaCy v3 .spacy format.
+ 3. we have to run model creation on spacy part of project. The only we have to do is to: a)project.yml- if we want to specify language, gpus, other workflows b)python -m spacy project run all
+ 4. 
+
+
+
+
+ ### How to run:
 1. Everything from requirements have to be installed using 
         pip install -r requirements.txt
         conda install -c conda-forge poppler

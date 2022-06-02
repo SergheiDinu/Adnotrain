@@ -48,12 +48,12 @@ commands:
   - name: "convert"
     help: "Convert the data to spaCy's binary format"
     script:
-      - "python scripts/convert.py ${vars.lang} assets/${vars.train} corpus/train.spacy"
-      - "python scripts/convert.py ${vars.lang} assets/${vars.dev} corpus/dev.spacy"
+      - "python scripts/convertlabelstudiooutput.py ${vars.lang} assets/${vars.train} corpus/train.spacy"
+      - "python scripts/convertlabelstudiooutput.py ${vars.lang} assets/${vars.dev} corpus/dev.spacy"
     deps:
       - "assets/${vars.train}"
       - "assets/${vars.dev}"
-      - "scripts/convert.py"
+      - "scripts/convertlabelstudiooutput.py"
     outputs:
       - "corpus/train.spacy"
       - "corpus/dev.spacy"
